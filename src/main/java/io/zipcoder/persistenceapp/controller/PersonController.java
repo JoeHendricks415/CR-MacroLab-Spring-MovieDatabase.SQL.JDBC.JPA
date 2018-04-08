@@ -16,7 +16,7 @@ public class PersonController {
     @Autowired
     private PersonService personService;
 
-    @RequestMapping(value = "/persons", method = RequestMethod.GET)
+    @RequestMapping(value = "/person", method = RequestMethod.GET)
     public ResponseEntity<?> getAllPersons(){
         personService.getAllPersons();
         return new ResponseEntity<>(HttpStatus.OK);
