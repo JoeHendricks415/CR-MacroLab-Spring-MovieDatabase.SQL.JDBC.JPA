@@ -23,3 +23,13 @@ VALUES
   (3, 'Navigation', 17500),
   (3, 'Luxury', 22000),
   (3, 'Opulent', 93000);
+-------------------------------------- Person Builder
+
+INSERT INTO person (LAST_NAME, FIRST_NAME, MOBILE, BIRTHDAY)
+VALUES
+  ('Hendricks', 'Joe', '489-1813', '1987-04-15'),
+  ('Kuderski', 'Jess', '489-1515', '1984-08-21'),
+  ('Vila', 'Bob', '555-6666', '1948-06-20'),
+  ('Iommi', 'Tony', '666-4311', '1946-04-03');
+
+

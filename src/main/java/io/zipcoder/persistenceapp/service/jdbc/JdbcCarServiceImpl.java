@@ -28,7 +28,7 @@ public class JdbcCarServiceImpl implements CarService {
     @Autowired
     JdbcTemplate jdbcTemplate;
 
-
+    //private static final String SELECT_ALL_FROM_CARS = "SELECT * FROM cars";
     private static final String DELETE_CAR_BY_ID = "DELETE FROM cars WHERE id = ?";
     private static final String DELETE_CAR_BY_FIELDS = "DELETE FROM cars WHERE make = ? AND model = ? AND year = ?;";
     private static final String SELECT_CARS_BY_MAKE = "SELECT * FROM cars WHERE make = ?;";

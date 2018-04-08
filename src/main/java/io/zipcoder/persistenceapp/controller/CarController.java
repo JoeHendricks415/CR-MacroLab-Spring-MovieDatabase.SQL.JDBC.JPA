@@ -29,6 +29,7 @@ public class CarController {
 
     @RequestMapping(value = "/cars", method = RequestMethod.POST)
     public ResponseEntity<?> createCar(@RequestBody Car c){
+
         return new ResponseEntity<>(HttpStatus.NOT_IMPLEMENTED);
     }
 
@@ -39,6 +40,7 @@ public class CarController {
 
     @RequestMapping(value = "/cars/sales/{year}", method = RequestMethod.GET)
     public ResponseEntity<?> listSalesForYear(@PathVariable String year){
+
         return new ResponseEntity<Object>(carService.getSalesPackagesForYear(year), HttpStatus.OK);
     }
 }
